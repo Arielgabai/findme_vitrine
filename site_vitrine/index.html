@@ -284,12 +284,9 @@
                     <form
                         class="contact-form"
                         id="contact-form"
-                        action="https://formsubmit.co/ariel.gabai@hotmail.fr"
+                        action="/contact"
                         method="POST"
                     >
-                        <input type="hidden" name="_subject" value="Nouvelle demande depuis la landing page FindMe">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
                         <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honeypot">
 
                         <div class="form-grid">
@@ -328,6 +325,8 @@
                             <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
                             <a class="btn btn-secondary" href="mailto:ariel.gabai@hotmail.fr">Prendre contact par e-mail</a>
                         </div>
+
+                        <div class="form-status" aria-live="polite"></div>
 
                         <p class="form-note">
                             En envoyant ce formulaire, vous acceptez que vos données soient utilisées pour traiter votre demande,

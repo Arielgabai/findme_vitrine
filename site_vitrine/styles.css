@@ -648,6 +648,31 @@ a {
     margin-top: 22px;
 }
 
+.form-status {
+    display: none;
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.form-status.is-visible {
+    display: block;
+}
+
+.form-status.is-success {
+    background: rgba(57, 255, 20, 0.08);
+    border: 1px solid rgba(57, 255, 20, 0.22);
+    color: #dcffd2;
+}
+
+.form-status.is-error {
+    background: rgba(255, 54, 213, 0.08);
+    border: 1px solid rgba(255, 54, 213, 0.22);
+    color: #ffd9f5;
+}
+
 .form-note {
     margin: 18px 0 0;
     color: var(--muted);
