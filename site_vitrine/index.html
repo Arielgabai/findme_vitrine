@@ -48,7 +48,7 @@
                     </p>
 
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="#cta">Demander une démo</a>
+                        <a class="btn btn-primary" href="#contact-form">Demander une démo</a>
                         <a class="btn btn-secondary" href="#workflow">Voir comment FindMe fonctionne</a>
                     </div>
 
@@ -279,12 +279,61 @@
                     <span class="section-kicker">Démo</span>
                     <h2>Découvrez comment FindMe peut renforcer votre expérience photo.</h2>
                     <p>
-                        Si vous voulez proposer une expérience plus claire après l'événement et donner plus de valeur à vos galeries, nous pouvons vous présenter FindMe simplement.
+                        Si vous voulez proposer une expérience plus claire après l'événement et donner plus de valeur à vos galeries, envoyez votre demande ci-dessous. Nous reviendrons vers vous par e-mail.
                     </p>
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="#top">Demander une démo</a>
-                        <a class="btn btn-secondary" href="#solution">Prendre contact</a>
-                    </div>
+                    <form
+                        class="contact-form"
+                        id="contact-form"
+                        action="https://formsubmit.co/ariel.gabai@hotmail.fr"
+                        method="POST"
+                    >
+                        <input type="hidden" name="_subject" value="Nouvelle demande depuis la landing page FindMe">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honeypot">
+
+                        <div class="form-grid">
+                            <label class="form-field">
+                                <span>Nom</span>
+                                <input type="text" name="name" placeholder="Votre nom" required>
+                            </label>
+
+                            <label class="form-field">
+                                <span>E-mail</span>
+                                <input type="email" name="email" placeholder="vous@exemple.com" required>
+                            </label>
+
+                            <label class="form-field">
+                                <span>Profil</span>
+                                <select name="profil" required>
+                                    <option value="" selected disabled>Sélectionnez votre profil</option>
+                                    <option value="Photographe">Photographe</option>
+                                    <option value="Marie ou organisateur">Marié ou organisateur</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </label>
+
+                            <label class="form-field">
+                                <span>Type d'événement</span>
+                                <input type="text" name="evenement" placeholder="Mariage, événement privé, autre">
+                            </label>
+
+                            <label class="form-field form-field-full">
+                                <span>Votre message</span>
+                                <textarea name="message" rows="5" placeholder="Décrivez votre besoin, votre activité ou le type de démo souhaité." required></textarea>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+                            <a class="btn btn-secondary" href="mailto:ariel.gabai@hotmail.fr">Prendre contact par e-mail</a>
+                        </div>
+
+                        <p class="form-note">
+                            En envoyant ce formulaire, vous acceptez que vos données soient utilisées pour traiter votre demande,
+                            conformément à notre <a href="./politique-confidentialite.html">Politique de confidentialité</a>.
+                        </p>
+                    </form>
                 </div>
             </section>
         </main>
